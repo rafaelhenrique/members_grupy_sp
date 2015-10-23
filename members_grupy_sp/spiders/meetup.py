@@ -4,9 +4,9 @@ import scrapy
 
 class MeetupSpider(scrapy.Spider):
     name = "meetup"
-    allowed_domains = ["www.meetup.com"]
+    allowed_domains = ["meetup.com"]
     start_urls = (
-        'http://www.www.meetup.com/',
+        'http://www.meetup.com/',
     )
 
     def parse(self, response):
