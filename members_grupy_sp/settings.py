@@ -64,6 +64,11 @@ NEWSPIDER_MODULE = 'members_grupy_sp.spiders'
 #ITEM_PIPELINES = {
 #    'members_grupy_sp.pipelines.SomePipeline': 300,
 #}
+ITEM_PIPELINES = {
+    'members_grupy_sp.pipelines.JsonExportPipeline': 300,
+    'members_grupy_sp.pipelines.CsvExportPipeline': 400,
+}
+
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html

@@ -9,6 +9,6 @@ import scrapy
 
 
 class MembersGrupySpItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    name = scrapy.Field()
+    member = scrapy.Field()
+    url = scrapy.Field()
